@@ -17,7 +17,7 @@ public class AppCardTest {
     @Test
     public void cardDeliveryTest (){
         open("http://localhost:9999/");
-        $("[data-test-id='city'] input").setValue("Пермский край");
+        $("[data-test-id='city'] input").setValue("Пермь");
         String planningDate = generateDate(4, "dd.MM.yyyy");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
         $("[data-test-id='date'] input").setValue(planningDate);
