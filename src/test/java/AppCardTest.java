@@ -1,5 +1,3 @@
-package ru.netology.webselenide;
-
 import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
