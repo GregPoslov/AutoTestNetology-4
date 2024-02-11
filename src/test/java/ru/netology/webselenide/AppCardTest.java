@@ -15,9 +15,9 @@ public class AppCardTest {
         return LocalDate.now().plusDays(addDays).format(DateTimeFormatter.ofPattern(pattern));
     }
     @Test
-    public void completedSuccessfully (){
+    public void cardDeliveryTest (){
         open("http://localhost:9999/");
-        $("[data-test-id='city'] input").setValue("Рязань");
+        $("[data-test-id='city'] input").setValue("Пермский край");
         String planningDate = generateDate(4, "dd.MM.yyyy");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
         $("[data-test-id='date'] input").setValue(planningDate);
