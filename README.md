@@ -1,0 +1,1 @@
+[![Java CI with Gradle](https://github.com/GregPoslov/AutoTestNetology-4/actions/workflows/gradle.yml/badge.svg?branch=main)](https://github.com/GregPoslov/AutoTestNetology-4/actions/workflows/gradle.yml)
