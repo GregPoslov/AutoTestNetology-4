@@ -2,8 +2,8 @@ plugins {
     id 'java'
 }
 
-group = 'ru.netologu'
-version = '1.0-SNAPSHOT'
+group 'ru.netology'
+version '1.0-SNAPSHOT'
 
 sourceCompatibility = 11
 compileJava.options.encoding = "UTF-8"
@@ -14,12 +14,11 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
     testImplementation 'com.codeborne:selenide:6.17.2'
-    testImplementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
 }
 
 test {
     useJUnitPlatform()
-    systemProperty'selenide.headless', System.getProperty('selenide.headless')
+    systemProperty 'selenide.headless', System.getProperty('selenide.headless')
 }
